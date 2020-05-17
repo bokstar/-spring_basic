@@ -1,7 +1,7 @@
 package com.example.q1;
                         // Thread 클래스 알아보기
 public class Counter extends Thread {
-    int i = 5;
+    int i = 10;
 
     // synchronized 란 무엇?
     public synchronized void display(Counter obj){
@@ -14,7 +14,7 @@ public class Counter extends Thread {
         }catch (InterruptedException ie){ }
     }
     public synchronized void increment (Counter obj){
-
+    i++;
     }
 
 
