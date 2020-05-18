@@ -16,7 +16,7 @@ public class MemberDto {
     private LocalDateTime createdDate;
     private LocalDateTime modifiedDate;
 
-    public MemberEntity toEntity(){
+    public MemberEntity toEntity() {
         return MemberEntity.builder()
                 .id(id)
                 .email(email)
@@ -30,8 +30,6 @@ public class MemberDto {
         this.email = email;
         this.password = password;
     }
-
-
 
 
 }

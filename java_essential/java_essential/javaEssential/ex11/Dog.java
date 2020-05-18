@@ -1,6 +1,6 @@
 package javaEssential.ex11;
 
-public class Dog extends  AbstractS{
+public class Dog extends AbstractS {
 
     @Override
     void cry() {

@@ -8,8 +8,8 @@ public class TestClone {
         car1.setOwner("신재복");
 
         System.out.println(
-                "car1:  "+ car1.getModelName()+"" +
-                        ""+car1.getOwner());
+                "car1:  " + car1.getModelName() + "" +
+                        "" + car1.getOwner());
 
 //        Car car2 = (Car)car1.clone(
 //        car2.setOwner("이순신");

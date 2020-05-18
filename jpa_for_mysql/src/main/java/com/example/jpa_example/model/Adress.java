@@ -9,6 +9,7 @@ import javax.persistence.Id;
 public class Adress {
     public Adress() {
     }
+
     @Id
     @GeneratedValue
     private Long id;

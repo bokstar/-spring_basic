@@ -7,22 +7,28 @@ public class Car {
     private String color;
     private String right;
 
-    public Car() {        this("sdf","erw","qfaf","asfsf"); }
+    public Car() {
+        this("sdf", "erw", "qfaf", "asfsf");
+    }
+
     public Car(String color) {
         this.color = color;
     }
-    void dispaly(){ }
-    void dispaly(int i){
+
+    void dispaly() {
+    }
+
+    void dispaly(int i) {
         System.out.println(i);
     }
-    void dispaly(int i,int j){
-        System.out.println(i+j);
+
+    void dispaly(int i, int j) {
+        System.out.println(i + j);
     }
-    void dispaly(String s){
+
+    void dispaly(String s) {
         System.out.println(s);
     }
-
-
 
 
     public Car(String speed, String model, String color, String right) {
@@ -32,8 +38,9 @@ public class Car {
         this.right = right;
     }
 
-    void init(){
+    void init() {
     }
+
     public String getSpeed() {
         return speed;
     }

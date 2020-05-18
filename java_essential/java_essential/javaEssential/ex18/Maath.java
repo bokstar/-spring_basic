@@ -7,7 +7,8 @@ public class Maath {
 
     static double randomNumber;
     static int j;
-    void randomNum(){
+
+    void randomNum() {
         randomNumber = (double) Math.random();
     }
 
@@ -21,8 +22,8 @@ public class Maath {
         num.add(123152);
         num.add(123162);
 
-        for (int i : num){
-            j= Math.max(i,i-1);
+        for (int i : num) {
+            j = Math.max(i, i - 1);
 
         }
         System.out.println(j);

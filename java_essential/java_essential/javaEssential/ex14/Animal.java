@@ -1,7 +1,7 @@
 package javaEssential.ex14;
 
 public class Animal {
-    void cry(){
+    void cry() {
         System.out.println("찢기!!");
     }
 }

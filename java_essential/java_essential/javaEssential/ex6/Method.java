@@ -1,26 +1,27 @@
 package javaEssential.ex6;
 
 public class Method {
-    int i,j;
+    int i, j;
+
     {
-        this.i=0;
-        this.j=0;
+        this.i = 0;
+        this.j = 0;
 
     }
 
     public Method() {
     }
 
-    int add(){
-      return i+j;
+    int add() {
+        return i + j;
     }
 
-    int add(int i,int j){
-      return i+j;
+    int add(int i, int j) {
+        return i + j;
     }
 
     public static void main(String[] args) {
-    Method method = new Method();
+        Method method = new Method();
 
 
     }

@@ -1,6 +1,6 @@
 package javaEssential.ex13;
 
-public class Cat implements Animal,Pet  {
+public class Cat implements Animal, Pet {
     @Override
     public void cry() {
         System.out.println("야야얌아ㅏㄹ");

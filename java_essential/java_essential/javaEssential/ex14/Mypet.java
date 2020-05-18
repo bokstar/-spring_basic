@@ -1,5 +1,5 @@
 package javaEssential.ex14;
 
-public class Mypet  {
+public class Mypet {
 
 }

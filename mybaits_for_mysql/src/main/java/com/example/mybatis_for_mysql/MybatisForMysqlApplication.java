@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.example.mybatis_for_mysql.mapper")
 public class MybatisForMysqlApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MybatisForMysqlApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MybatisForMysqlApplication.class, args);
+    }
 
 }

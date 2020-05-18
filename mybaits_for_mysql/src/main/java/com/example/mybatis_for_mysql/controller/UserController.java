@@ -22,9 +22,9 @@ public class UserController {
 
     // 회원가입 처리
     @PostMapping("/pass")
-    public String execSignup(User user ) {
+    public String execSignup(User user) {
 
-        userMapper.insert(user.getIdx(),user.getName(),user.getLocal());
+        userMapper.insert(user.getIdx(), user.getName(), user.getLocal());
 
         return "redirect:/";
     }

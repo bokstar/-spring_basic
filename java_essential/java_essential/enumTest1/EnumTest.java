@@ -3,6 +3,7 @@ package enumTest1;
 public class EnumTest {
 
     Day day;
+
     public EnumTest(Day day) {
         this.day = day;
     }
@@ -16,7 +17,8 @@ public class EnumTest {
             case FRIDAY:
                 System.out.println("Fridays are better.");
                 break;
-            case SATURDAY: case SUNDAY:
+            case SATURDAY:
+            case SUNDAY:
                 System.out.println("Weekends are best.");
                 break;
             default:

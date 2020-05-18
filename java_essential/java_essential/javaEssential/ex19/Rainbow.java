@@ -9,7 +9,8 @@ public enum Rainbow {
     Rainbow(int value) {
         this.value = value;
     }
-     public int getValue() {
+
+    public int getValue() {
         return value;
     }
 

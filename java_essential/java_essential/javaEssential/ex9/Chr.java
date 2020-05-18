@@ -6,6 +6,6 @@ public class Chr extends Par {
 
     public Chr() {
         super();
-        b=20;
+        b = 20;
     }
 }

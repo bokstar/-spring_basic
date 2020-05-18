@@ -26,10 +26,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     MemberService memberService;
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-
 
 
     @Override
@@ -47,18 +46,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
 
                 .and() // 로그인 설정
-                    .formLogin()
+                .formLogin()
                 .loginPage("/user/login").defaultSuccessUrl("/user/login/result")
                 .permitAll()
 
                 .and() // 로그아웃 설정
-                    .logout()
+                .logout()
                 .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
                 .logoutSuccessUrl("/user/logout/result")
                 .invalidateHttpSession(true)
 
                 .and()// 403 예외 처리 핸들링
-                    .exceptionHandling().accessDeniedPage("/user/denied");
+                .exceptionHandling().accessDeniedPage("/user/denied");
     }
 
 
