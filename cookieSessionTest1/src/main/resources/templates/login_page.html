@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+
+<h1>Login</h1>
+<p>Please enter ID & password</p>
+<!--/*@thymesVar id="errStr" type="java.lang.String"*/-->
+<div th:if="${errStr != null}" th:text="${errStr}"></div>
+
+<!--/*@thymesVar id="loginInfo" type="com.board.dtos.LoginInfo"*/-->
+
+<form action="#" th:action="@{/user/login}" th:object="${loginInfo}" method="post">
+    ID: <br/>
+    <input type="text" th:field="*{id}" th:value="*{id}"/><br/>
+    Password: <br/>
+    <input type="password" th:field="*{password}"/><br/>
+    <input type="checkbox" th:field="*{storeId}" th:checked="*{storeId}"/>ID 저장
+    <br/><br/>
+    <input type="submit" value="Login"/>
+</form>
+
+</body>
+</html>
